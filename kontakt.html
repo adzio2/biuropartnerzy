@@ -43,41 +43,22 @@
                     <div class="row">
                         <div class="col-lg-1 col-md-2 hidden-xs">
                             <div class="bar__module">
-                                <a href="index.html"> <img class="logo logo-dark" alt="logo" src="img/biuro-partnerzy.png">
-                                    <img class="logo logo-light" alt="logo" src="img/biuro-partnerzy.png"> </a>
+                                <a href="index.html"> <img class="logo logo-dark" alt="logo" src="img/biuro-partnerzy.gif">
+                                    <img class="logo logo-light" alt="logo" src="img/biuro-partnerzy.gif"> </a>
                             </div>
                         </div>
                         <div class="col-lg-11 col-md-12 text-right text-left-xs text-left-sm extra-margin">
                             <div class="bar__module">
                                 <ul class="menu-horizontal text-left">
                                     <li> <a href="index.html">O nas</a> </li>
-                                    <li class="dropdown"> <span class="dropdown__trigger">
-                                            Finansowanie
-                                        </span>
-                                        <div class="dropdown__container">
-                                            <div class="container">
-                                                <div class="row">
-                                                    <div class="dropdown__content col-lg-2">
-                                                        <ul class="menu-vertical">
-                                                            <li> <a href="finansowanie-dla-firm.html">Dla firm</a> </li>
-                                                            <li> <a href="finansowanie-dla-osob-prywatnych.html">Dla
-                                                                    osób
-                                                                    prywatnych</a> </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li> <a href="#">Porady prawne</a> </li>
-                                    <li> <a href="#">Księgowość</a> </li>
-                                    <li> <a href="#">Eksport</a> </li>
-                                    <li> <a href="#">Kontakt</a> </li>
+                                    <li> <a href="dla-firm.html">Dla firm</a> </li>
+                                    <li> <a href="dla-osob-prywatnych.html">Dla osób prywatnych</a> </li>
+                                    <li> <a href="kontakt.html">Kontakt</a> </li>
                                 </ul>
                             </div>
                             <div class="bar__module">
 
-                                <a class="btn btn--sm btn--primary type--uppercase" href="tel:+48607351430"> <span
+                                <a class="btn btn--sm btn--primary type--uppercase" href="#purchase-template"> <span
                                         class="btn__text">
                                         Zadzwoń</span> </a>
                             </div>
@@ -94,10 +75,6 @@
                 <div class="row">
                     <div class="col-md-10 col-lg-8">
                         <h1>Zapraszamy do współpracy!</h1>
-                        <p class="lead"><b>
-                                Stack's visual style is simple yet distinct, making it an ideal starting point for your
-                                project whether it be a basic marketing site, or multi-page company presence.
-                            </b></p>
                     </div>
                 </div>
             </div>
@@ -123,16 +100,40 @@
                         <div class="text-block">
                             <p class="lead"> Napisz do nas. Odpowiemy w ciągu 1 dnia roboczego.</p>
                         </div>
-                        <form class="form-email row" data-success="Thanks for your enquiry, we'll be in touch shortly."
-                            data-error="Please fill in all fields correctly.">
-                            <div class="col-md-6 col-12"> <label>Your Name:</label> <input type="text" name="Name"
-                                    class="validate-required"> </div>
-                            <div class="col-md-6 col-12"> <label>Email Address:</label> <input type="email" name="email"
-                                    class="validate-required validate-email"> </div>
-                            <div class="col-md-12 col-12"> <label>Message:</label> <textarea rows="3" name="Message"
-                                    class="validate-required"></textarea> </div>
-                            <div class="col-md-5 col-lg-4 col-6"> <button type="submit" class="btn btn--primary type--uppercase">Send
-                                    Enquiry</button> </div>
+                        <form class="text-left -form-email row mx-0 attempted-submit" name="Formularz Biuro Finansowe Partnerzy"
+                            netlify-honeypot="bot-field" netlify data-netlify="true" method="POST" action="/dziekujemy.html"
+                            data-netlify-recaptcha="true">
+                            <div style="display: none;"><label>Don’t fill this out if you're human:</label> <input name="bot-field" /></div>
+                            <div class="col-md-12 col-12">
+                                <label>Imię i nazwisko</label>
+                                <input type="text" name="Imię i nazwisko" required> </div>
+                            <div class="col-md-6 col-12">
+                                <label>Adres email</label>
+                                <input type="email" name="Email" required>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <label>Numer telefonu</label>
+                                <input type="text" name="Numer telefonu"> </div>
+                            <div class="col-md-12 col-12">
+                                <label>Jaka usługa Cię interesuje?</label>
+                                <select name="Branża">
+                                    <option value="---">---</option>
+                                    <option value="finansowanie dla firm">finansowanie dla firm</option>
+                                    <option value="finansowanie dla osób prywatnych">finansowanie dla osób prywatnych</option>
+                                    <option value="porady prawne">porady prawne</option>
+                                    <option value="księgowość">księgowość</option>
+                                    <option value="inne">inne</option>
+                                </select>
+                            </div>
+                            <div class="col-md-12 col-12">
+                                <label>Wiadomość</label>
+                                <textarea rows="4" name="Wiadomość"></textarea> </div>
+                            <div class="col-md-12 col-12">
+                                <div class="g-recaptcha" data-sitekey="6Le644UUAAAAANLZ8c7nlIg8UR22ayr2v2id3Hqg"></div>
+                            </div>
+                            <div class="col-md-5 col-lg-4 col-6">
+                                <button type="submit" class="btn btn--primary type--uppercase">Wyślij</button>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -153,26 +154,27 @@
                 <div class="row">
                     <div class="col-sm-7">
                         <ul class="list-inline">
-                            <li> <a href="#"><span class="h6 type--uppercase">
-                                        <p>Biuro</p>
+                            <li> <a href="index.html"><span class="h6 type--uppercase">
+                                        <p>O nas</p>
                                     </span></a> </li>
-                            <li> <a href="#"><span class="h6 type--uppercase">
+                            <li> <a href="dla-firm.html"><span class="h6 type--uppercase">
                                         <p>Dla firm</p>
                                     </span></a> </li>
-                            <li> <a href="#"><span class="h6 type--uppercase">
+                            <li> <a href="dla-osob-prywatnych.html"><span class="h6 type--uppercase">
                                         <p>Dla osób prywatnych</p>
                                     </span></a> </li>
                             <li> <a href="#"><span class="h6 type--uppercase">
                                         <p>Aktualności</p>
                                     </span></a> </li>
-                            <li> <a href="#"><span class="h6 type--uppercase">
+                            <li> <a href="kontakt.html"><span class="h6 type--uppercase">
                                         <p>Kontakt</p>
                                     </span></a> </li>
                         </ul>
                     </div>
                     <div class="col-sm-5 text-right text-center-xs">
                         <ul class="social-list list-inline list--hover">
-                            <li><a href="#"><i class="socicon socicon-google icon icon--xs"></i></a></li>
+                            <li><a href="https://www.google.com/maps?ll=52.416098,16.905223&z=14&t=m&hl=pl-PL&gl=PL&mapclient=embed&cid=15684104716636731645"
+                                    target="_blank"><i class="socicon socicon-google icon icon--xs"></i></a></li>
                             <li><a href="#"><i class="socicon socicon-twitter icon icon--xs"></i></a></li>
                             <li><a href="#"><i class="socicon socicon-facebook icon icon--xs"></i></a></li>
                         </ul>
@@ -180,7 +182,7 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-7"> <span class="type--fine-print">© <span class="update-year">2018</span>&nbsp;Biuro
-                            Finansowe Partnerzy</span> <a class="type--fine-print" href="#">Privacy Policy</a> </div>
+                            Finansowe Partnerzy</span> </div>
                     <div class="col-sm-5 text-right text-center-xs"> <a class="type--fine-print" href="#">Projekt i
                             wykonanie x</a> </div>
                 </div>
